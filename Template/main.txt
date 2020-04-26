@@ -1525,9 +1525,9 @@ setInterval(function (){if(!$(&quot;\x23\x63\x72\x65\x64\x69\x74\x3A\x76\x69\x73
 			<nav>
 				<b:loop values='data:links' var='link'>
 				<b:if cond='data:link.isCurrentPage'>
-					<a class='active ripple-effect' expr:href='data:link.href'><b:if cond='data:link.title == &quot;Página Principal&quot;'><i class='material-icons'>home</i><b:else/><i class='material-icons'>label</i></b:if> <data:link.title/></a>
+					<a class='active ripple-effect' expr:href='data:link.href'><b:if cond='data:link.title == &quot;PÃ¡gina Principal&quot;'><i class='material-icons'>home</i><b:else/><i class='material-icons'>label</i></b:if> <data:link.title/></a>
 				<b:else/>
-					<a class='ripple-effect' expr:href='data:link.href'><b:if cond='data:link.title == &quot;Página Principal&quot;'><i class='material-icons'>home</i><b:else/><i class='material-icons'>label_outline</i></b:if> <data:link.title/></a>
+					<a class='ripple-effect' expr:href='data:link.href'><b:if cond='data:link.title == &quot;PÃ¡gina Principal&quot;'><i class='material-icons'>home</i><b:else/><i class='material-icons'>label_outline</i></b:if> <data:link.title/></a>
 				</b:if>
 				</b:loop>
 			</nav>
@@ -1636,8 +1636,8 @@ setInterval(function (){if(!$(&quot;\x23\x63\x72\x65\x64\x69\x74\x3A\x76\x69\x73
 	<b:include cond='data:blog.pageType == &quot;index&quot;' name='paginacion'/>
 
     </b:includable>
-    <b:includable id='backlinkDeleteIcon' var='backlink'><!--Vacío--></b:includable>
-    <b:includable id='backlinks' var='post'><!--Vacío--></b:includable>
+    <b:includable id='backlinkDeleteIcon' var='backlink'><!--VacÃ­o--></b:includable>
+    <b:includable id='backlinks' var='post'><!--VacÃ­o--></b:includable>
     <b:includable id='comment-form' var='post'>
   <div class='comment-form'>
     <a name='comment-form'/>
@@ -1835,11 +1835,11 @@ var a=document.getElementsByClassName("avatar-image-container");for(i=0;i<a.leng
   </div>
 </b:includable>
     <b:includable id='iframe_comments' var='post'><b:if cond='data:post.allowIframeComments'><script expr:src='data:post.iframeCommentSrc' type='text/javascript'/><div class='cmt_iframe_holder' expr:data-href='data:post.canonicalUrl' expr:data-viewtype='data:post.viewType'/><b:if cond='data:post.embedCommentForm == &quot;false&quot;'><a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a></b:if></b:if></b:includable>
-    <b:includable id='mobile-index-post' var='post'><!-- Vacío--></b:includable>
-    <b:includable id='mobile-main' var='top'><!--Vacío--></b:includable>
-    <b:includable id='mobile-nextprev'><!-- Vacío--></b:includable>
-    <b:includable id='mobile-post' var='post'><!-- Vacío--></b:includable>
-    <b:includable id='nextprev'><!--Vacío--></b:includable>
+    <b:includable id='mobile-index-post' var='post'><!-- VacÃ­o--></b:includable>
+    <b:includable id='mobile-main' var='top'><!--VacÃ­o--></b:includable>
+    <b:includable id='mobile-nextprev'><!-- VacÃ­o--></b:includable>
+    <b:includable id='mobile-post' var='post'><!-- VacÃ­o--></b:includable>
+    <b:includable id='nextprev'><!--VacÃ­o--></b:includable>
     <b:includable id='paginacion'>
 	<div class='blog-pager'>
 	<b:if cond='data:newerPageUrl'><a class='btn cyan newer-link ripple-effect' expr:href='data:newerPageUrl' expr:title='data:newerPageTitle'><i class='material-icons'>&#58820;</i> Previous Page</a></b:if>
@@ -2162,7 +2162,7 @@ li.bhero-s1 {
 
 	</b:switch>
 	</b:includable>
-    <b:includable id='postQuickEdit' var='post'><!--Vacío--></b:includable>
+    <b:includable id='postQuickEdit' var='post'><!--VacÃ­o--></b:includable>
     <b:includable id='shareButtons' var='post'><!--vacio--></b:includable>
     <b:includable id='side-post'>
 		<div class='side'><!--side-->
@@ -2197,7 +2197,7 @@ li.bhero-s1 {
 
 		</div><!--end side-->
 	</b:includable>
-    <b:includable id='status-message'><!--Vacío--></b:includable>
+    <b:includable id='status-message'><!--VacÃ­o--></b:includable>
     <b:includable id='threaded-comment-form' var='post'>
   <div class='comment-form'>
     <a name='comment-form'/>
@@ -2457,7 +2457,7 @@ var options={offset:'#md-show',classes:{clone:"md-clone",stick:"md-stick",unstic
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <script type='text/javascript'>
 //<![CDATA[
-  //!Autor: José Gregorio Materán | modificado: Daniel Abel
+  //!Autor: JosÃ© Gregorio MaterÃ¡n | modificado: Daniel Abel
 var h=document.querySelector(".share").children;i=0;for(t=h.length;i<t;i++)h[i].onclick=function(a){a.preventDefault();window.open(this.href,"btn-"+i,"width=800,height=400,left="+(screen.width/2-400)+",top="+(screen.height/2-200))};
 //]]>
 </script>
